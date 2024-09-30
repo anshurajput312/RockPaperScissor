@@ -10,19 +10,15 @@ namespace RockPaperScissor
         {
             InitializeComponent();
         }
-
         private void label1_Click(object sender, EventArgs e)
         {
-
         }
-
         private void label2_Click(object sender, EventArgs e)
         {
 
         }
         public void GetWinner(int i)
         {
-
             var computerIndex = new Random().Next(0, 3);
             pctBxP.Image = Image.FromFile(GetPicture(i));
             pctBxc.Image = Image.FromFile(GetPicture(computerIndex));
