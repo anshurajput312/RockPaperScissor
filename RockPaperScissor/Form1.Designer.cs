@@ -39,13 +39,14 @@ namespace RockPaperScissor
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            label5 = new Label();
             lblP = new Label();
             lblc = new Label();
             pctBxP = new PictureBox();
             pctBxc = new PictureBox();
             lblscorep = new Label();
             lblscorec = new Label();
+            label6 = new Label();
+            label5 = new Label();
             ((System.ComponentModel.ISupportInitialize)pctBxP).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pctBxc).BeginInit();
             SuspendLayout();
@@ -96,10 +97,10 @@ namespace RockPaperScissor
             // 
             // button4
             // 
-            button4.BackColor = SystemColors.ControlText;
-            button4.Font = new Font("Monotype Corsiva", 20.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            button4.ForeColor = Color.Red;
-            button4.Location = new Point(292, 657);
+            button4.BackColor = Color.White;
+            button4.Font = new Font("Imprint MT Shadow", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button4.ForeColor = Color.Black;
+            button4.Location = new Point(292, 651);
             button4.Name = "button4";
             button4.Size = new Size(208, 61);
             button4.TabIndex = 8;
@@ -117,26 +118,27 @@ namespace RockPaperScissor
             label1.Size = new Size(476, 79);
             label1.TabIndex = 0;
             label1.Text = "Rock Paper Scissor";
-            label1.Click += label1_Click;
+            
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(79, 114);
+            label2.BackColor = Color.White;
+            label2.Font = new Font("Imprint MT Shadow", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Location = new Point(100, 97);
             label2.Name = "label2";
-            label2.Size = new Size(94, 40);
+            label2.Size = new Size(68, 34);
             label2.TabIndex = 1;
-            label2.Text = "Player";
-            label2.Click += label2_Click;
+            label2.Text = "You";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(587, 114);
+            label3.BackColor = Color.White;
+            label3.Font = new Font("Imprint MT Shadow", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(588, 97);
             label3.Name = "label3";
-            label3.Size = new Size(145, 40);
+            label3.Size = new Size(142, 34);
             label3.TabIndex = 2;
             label3.Text = "Computer";
             label3.Click += label3_Click;
@@ -145,19 +147,11 @@ namespace RockPaperScissor
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(374, 120);
+            label4.Location = new Point(374, 103);
             label4.Name = "label4";
             label4.Size = new Size(43, 32);
             label4.TabIndex = 3;
             label4.Text = "VS";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(310, 134);
-            label5.Name = "label5";
-            label5.Size = new Size(0, 15);
-            label5.TabIndex = 9;
             // 
             // lblP
             // 
@@ -177,7 +171,7 @@ namespace RockPaperScissor
             // 
             // pctBxP
             // 
-            pctBxP.Location = new Point(49, 171);
+            pctBxP.Location = new Point(49, 151);
             pctBxP.Name = "pctBxP";
             pctBxP.Size = new Size(169, 164);
             pctBxP.SizeMode = PictureBoxSizeMode.CenterImage;
@@ -186,7 +180,7 @@ namespace RockPaperScissor
             // 
             // pctBxc
             // 
-            pctBxc.Location = new Point(578, 171);
+            pctBxc.Location = new Point(575, 151);
             pctBxc.Name = "pctBxc";
             pctBxc.Size = new Size(169, 164);
             pctBxc.SizeMode = PictureBoxSizeMode.CenterImage;
@@ -196,35 +190,62 @@ namespace RockPaperScissor
             // lblscorep
             // 
             lblscorep.AutoSize = true;
+            lblscorep.BackColor = Color.White;
             lblscorep.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblscorep.Location = new Point(170, 120);
+            lblscorep.ForeColor = Color.ForestGreen;
+            lblscorep.Location = new Point(154, 323);
             lblscorep.Name = "lblscorep";
-            lblscorep.Size = new Size(0, 32);
+            lblscorep.Size = new Size(27, 32);
             lblscorep.TabIndex = 14;
-            lblscorep.Click += lblscorep_Click;
+            lblscorep.Text = "0";
             // 
             // lblscorec
             // 
             lblscorec.AutoSize = true;
+            lblscorec.BackColor = Color.White;
             lblscorec.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblscorec.Location = new Point(726, 120);
+            lblscorec.ForeColor = Color.ForestGreen;
+            lblscorec.Location = new Point(681, 323);
             lblscorec.Name = "lblscorec";
-            lblscorec.Size = new Size(0, 32);
+            lblscorec.Size = new Size(27, 32);
             lblscorec.TabIndex = 15;
-            lblscorec.Click += lblscorec_Click;
+            lblscorec.Text = "0";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.White;
+            label6.Font = new Font("Sylfaen", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.Location = new Point(86, 323);
+            label6.Name = "label6";
+            label6.Size = new Size(73, 31);
+            label6.TabIndex = 16;
+            label6.Text = "Wins:";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.White;
+            label5.Font = new Font("Sylfaen", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.Location = new Point(615, 323);
+            label5.Name = "label5";
+            label5.Size = new Size(73, 31);
+            label5.TabIndex = 17;
+            label5.Text = "Wins:";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 719);
+            ClientSize = new Size(795, 720);
+            Controls.Add(label5);
+            Controls.Add(label6);
             Controls.Add(lblscorec);
             Controls.Add(lblscorep);
             Controls.Add(pctBxc);
             Controls.Add(pctBxP);
             Controls.Add(lblc);
             Controls.Add(lblP);
-            Controls.Add(label5);
             Controls.Add(button4);
             Controls.Add(btnPaper);
             Controls.Add(btnSec);
@@ -236,7 +257,6 @@ namespace RockPaperScissor
             Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";
-            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pctBxP).EndInit();
             ((System.ComponentModel.ISupportInitialize)pctBxc).EndInit();
             ResumeLayout(false);
@@ -258,12 +278,13 @@ namespace RockPaperScissor
         private Label label2;
         private Label label3;
         private Label label4;
-        private Label label5;
         private Label lblP;
         private Label lblc;
         private PictureBox pctBxP;
         private PictureBox pctBxc;
         private Label lblscorep;
         private Label lblscorec;
+        private Label label6;
+        private Label label5;
     }
 }

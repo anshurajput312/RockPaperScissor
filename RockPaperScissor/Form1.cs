@@ -10,11 +10,6 @@ namespace RockPaperScissor
         {
             InitializeComponent();
         }
-        }
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
         public void GetWinner(int i)
         {
             var computerIndex = new Random().Next(0, 3);
@@ -106,10 +101,6 @@ namespace RockPaperScissor
             pctBxc.Text = "";
             lblscorep.Text = "0";
             lblscorec.Text = "0";
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
         }
     }
 }
